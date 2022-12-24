@@ -8,11 +8,11 @@
 ### ./get-reposense.py --commit abc123         # Gets a specific commit
 ### ./get-reposense.py --release --overwrite   # Overwrite RepoSense.jar, if exists, with the latest release
 
-./get-reposense.py --master --since 1/9/2022
+./get-reposense.py --release 
 
 # Executes RepoSense
 # Do not change the default output folder name (reposense-report)
 ## Examples of other valid options; For more, please view the user guide
 ### java -jar RepoSense.jar --repos https://github.com/reposense/RepoSense.git
 
-java -jar RepoSense.jar --config ./configs
+java -jar RepoSense.jar --config ./configs --since 1/9/2022
