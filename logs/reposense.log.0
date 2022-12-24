@@ -1,15 +1,15 @@
-Dec 24, 2022 8:21:32 AM reposense.parser.CsvParser validateHeader
+Dec 24, 2022 8:38:10 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, repo-config.csv, and recognized columns: Ignore Standalone Config,  Repository's Location,  Skip Ignored File Analysis,  Branch,  Shallow Cloning,  File formats,  Ignore Glob List,  Ignore Authors List,  Find Previous Authors,  File Size Limit,  Ignore File Size Limit,  Ignore Commits List
-Dec 24, 2022 8:21:32 AM reposense.parser.CsvParser validateHeader
+Dec 24, 2022 8:38:10 AM reposense.parser.CsvParser validateHeader
 INFO: Parsed header of CSV file, author-config.csv, and recognized columns: Author's Emails,  Repository's Location,  Branch,  Author's Git Host ID,  Author's Display Name,  Ignore Glob List,  Author's Git Author Name
-Dec 24, 2022 8:21:32 AM reposense.RepoSense getRepoConfigurations
+Dec 24, 2022 8:38:10 AM reposense.RepoSense getRepoConfigurations
 WARNING: No valid configurations in the author-config.csv.
 reposense.parser.InvalidCsvException: No valid configurations in the author-config.csv.
 	at reposense.parser.CsvParser.parse(CsvParser.java:112)
 	at reposense.RepoSense.getRepoConfigurations(RepoSense.java:149)
 	at reposense.RepoSense.main(RepoSense.java:67)
 
-Dec 24, 2022 8:21:32 AM reposense.git.GitConfig getGlobalGitLfsConfig
+Dec 24, 2022 8:38:10 AM reposense.git.GitConfig getGlobalGitLfsConfig
 WARNING: Could not get global git lfs config
 java.lang.RuntimeException: reposense.system.CommandRunnerProcessException: Error returned from command git config --global --list on path . :
 fatal: unable to read config file '/home/runner/.gitconfig': No such file or directory
@@ -25,155 +25,167 @@ fatal: unable to read config file '/home/runner/.gitconfig': No such file or dir
 	at reposense.system.CommandRunner.runCommand(CommandRunner.java:21)
 	... 3 more
 
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/kmaooad/caja22-independent-team...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/kmaooad/caja22-supraaa...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/kmaooad/caja22-bot-farm...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/kmaooad/caja22-stalevary...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/kmaooad/caja22-stalevary to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/kmaooad/caja22-bot-farm to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/kmaooad/caja22-supraaa...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/kmaooad/caja22-supraaa to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/kmaooad/caja22-bot-farm to complete...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/kmaooad/caja22-independent-team to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/kmaooad/caja22-stalevary completed!
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/kmaooad/caja22-bots...
-Dec 24, 2022 8:21:32 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [1/8] Analyzing https://github.com/kmaooad/caja22-stalevary (master)...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/kmaooad/caja22-bots to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.ReportGenerator updateRepoConfig
-INFO: https://github.com/kmaooad/caja22-stalevary (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:32 AM reposense.report.ReportGenerator updateAuthorList
-INFO: https://github.com/kmaooad/caja22-stalevary (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:32 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
-INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-stalevary (master)...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/kmaooad/caja22-independent-team completed!
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/kmaooad/caja22-bot-farm completed!
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/kmaooad/caja22-stalevary to complete...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/kmaooad/caja22-supraaa completed!
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/kmaooad/caja22-bots...
+Dec 24, 2022 8:38:11 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [1/8] Analyzing https://github.com/kmaooad/caja22-supraaa (master)...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/kmaooad/caja22-bots to complete...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/kmaooad/caja22-bot-farm completed!
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/kmaooad/caja22-independent-team completed!
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/kmaooad/caja22-kmavun...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/kmaooad/caja22-manticore...
-Dec 24, 2022 8:21:32 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [2/8] Analyzing https://github.com/kmaooad/caja22-independent-team (master)...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner spawnCloneProcess
-INFO: Cloning in parallel from https://github.com/kmaooad/caja22-opossum...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/kmaooad/caja22-kmavun to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/kmaooad/caja22-manticore to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Waiting for cloning of https://github.com/kmaooad/caja22-opossum to complete...
-Dec 24, 2022 8:21:32 AM reposense.report.ReportGenerator updateRepoConfig
-INFO: https://github.com/kmaooad/caja22-independent-team (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:32 AM reposense.report.ReportGenerator updateAuthorList
-INFO: https://github.com/kmaooad/caja22-independent-team (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:32 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
-INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-independent-team (master)...
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/kmaooad/caja22-bots completed!
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/kmaooad/caja22-kmavun completed!
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/kmaooad/caja22-opossum completed!
-Dec 24, 2022 8:21:32 AM reposense.report.RepoCloner waitForCloneProcess
-INFO: Cloning of https://github.com/kmaooad/caja22-manticore completed!
-Dec 24, 2022 8:21:33 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/kmaooad/caja22-independent-team (master)...
-Dec 24, 2022 8:21:34 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/kmaooad/caja22-independent-team (master)...
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/kmaooad/caja22-independent-team (master) completed!
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [3/8] Analyzing https://github.com/kmaooad/caja22-supraaa (master)...
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator updateRepoConfig
+Dec 24, 2022 8:38:11 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [2/8] Analyzing https://github.com/kmaooad/caja22-bot-farm (master)...
+Dec 24, 2022 8:38:11 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/kmaooad/caja22-supraaa (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator updateAuthorList
+Dec 24, 2022 8:38:11 AM reposense.report.ReportGenerator updateAuthorList
 INFO: https://github.com/kmaooad/caja22-supraaa (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:34 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/kmaooad/caja22-kmavun to complete...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/kmaooad/caja22-manticore...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/kmaooad/caja22-manticore to complete...
+Dec 24, 2022 8:38:11 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-supraaa (master)...
-Dec 24, 2022 8:21:34 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/kmaooad/caja22-stalevary (master)...
-Dec 24, 2022 8:21:34 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/kmaooad/caja22-stalevary (master)...
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/kmaooad/caja22-stalevary (master) completed!
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [4/8] Analyzing https://github.com/kmaooad/caja22-bot-farm (master)...
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator updateRepoConfig
+Dec 24, 2022 8:38:11 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/kmaooad/caja22-bot-farm (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:34 AM reposense.report.ReportGenerator updateAuthorList
+Dec 24, 2022 8:38:11 AM reposense.report.ReportGenerator updateAuthorList
 INFO: https://github.com/kmaooad/caja22-bot-farm (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:34 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Dec 24, 2022 8:38:11 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-bot-farm (master)...
-Dec 24, 2022 8:21:35 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/kmaooad/caja22-supraaa (master)...
-Dec 24, 2022 8:21:35 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/kmaooad/caja22-supraaa (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/kmaooad/caja22-supraaa (master) completed!
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [5/8] Analyzing https://github.com/kmaooad/caja22-bots (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateRepoConfig
-INFO: https://github.com/kmaooad/caja22-bots (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateAuthorList
-INFO: https://github.com/kmaooad/caja22-bots (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:35 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
-INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-bots (master)...
-Dec 24, 2022 8:21:35 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/kmaooad/caja22-stalevary completed!
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner spawnCloneProcess
+INFO: Cloning in parallel from https://github.com/kmaooad/caja22-opossum...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Waiting for cloning of https://github.com/kmaooad/caja22-opossum to complete...
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/kmaooad/caja22-bots completed!
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/kmaooad/caja22-manticore completed!
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/kmaooad/caja22-kmavun completed!
+Dec 24, 2022 8:38:11 AM reposense.report.RepoCloner waitForCloneProcess
+INFO: Cloning of https://github.com/kmaooad/caja22-opossum completed!
+Dec 24, 2022 8:38:12 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/kmaooad/caja22-bot-farm (master)...
-Dec 24, 2022 8:21:35 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Dec 24, 2022 8:38:12 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/kmaooad/caja22-supraaa (master)...
+Dec 24, 2022 8:38:12 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/kmaooad/caja22-bot-farm (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepo
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/kmaooad/caja22-bot-farm (master) completed!
-Dec 24, 2022 8:21:35 AM reposense.commits.CommitInfoExtractor extractCommitInfos
-INFO: Extracting commits info for https://github.com/kmaooad/caja22-bots (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [6/8] Analyzing https://github.com/kmaooad/caja22-kmavun (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateRepoConfig
-INFO: https://github.com/kmaooad/caja22-kmavun (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateAuthorList
-INFO: https://github.com/kmaooad/caja22-kmavun (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepos
-WARNING: No authors found with commits for https://github.com/kmaooad/caja22-kmavun (master).
-Dec 24, 2022 8:21:35 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
-INFO: Analyzing commits info for https://github.com/kmaooad/caja22-bots (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepo
-INFO: Analysis of https://github.com/kmaooad/caja22-bots (master) completed!
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [7/8] Analyzing https://github.com/kmaooad/caja22-opossum (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepos
-INFO: [8/8] Analyzing https://github.com/kmaooad/caja22-manticore (master)...
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateRepoConfig
+Dec 24, 2022 8:38:13 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/kmaooad/caja22-supraaa (master)...
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [3/8] Analyzing https://github.com/kmaooad/caja22-independent-team (master)...
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/kmaooad/caja22-supraaa (master) completed!
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [4/8] Analyzing https://github.com/kmaooad/caja22-stalevary (master)...
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator updateRepoConfig
+INFO: https://github.com/kmaooad/caja22-independent-team (master) does not contain a standalone config file.
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator updateAuthorList
+INFO: https://github.com/kmaooad/caja22-independent-team (master) has no authors specified, using all authors by default.
+Dec 24, 2022 8:38:13 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-independent-team (master)...
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator updateRepoConfig
+INFO: https://github.com/kmaooad/caja22-stalevary (master) does not contain a standalone config file.
+Dec 24, 2022 8:38:13 AM reposense.report.ReportGenerator updateAuthorList
+INFO: https://github.com/kmaooad/caja22-stalevary (master) has no authors specified, using all authors by default.
+Dec 24, 2022 8:38:13 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-stalevary (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/kmaooad/caja22-independent-team (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/kmaooad/caja22-independent-team (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/kmaooad/caja22-independent-team (master) completed!
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [5/8] Analyzing https://github.com/kmaooad/caja22-manticore (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/kmaooad/caja22-manticore (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateAuthorList
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateAuthorList
 INFO: https://github.com/kmaooad/caja22-manticore (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateRepoConfig
+Dec 24, 2022 8:38:14 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-manticore (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/kmaooad/caja22-manticore (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/kmaooad/caja22-manticore (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/kmaooad/caja22-manticore (master) completed!
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [6/8] Analyzing https://github.com/kmaooad/caja22-kmavun (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateRepoConfig
+INFO: https://github.com/kmaooad/caja22-kmavun (master) does not contain a standalone config file.
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateAuthorList
+INFO: https://github.com/kmaooad/caja22-kmavun (master) has no authors specified, using all authors by default.
+Dec 24, 2022 8:38:14 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-kmavun (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/kmaooad/caja22-stalevary (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/kmaooad/caja22-stalevary (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/kmaooad/caja22-stalevary (master) completed!
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [7/8] Analyzing https://github.com/kmaooad/caja22-bots (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateRepoConfig
+INFO: https://github.com/kmaooad/caja22-bots (master) does not contain a standalone config file.
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateAuthorList
+INFO: https://github.com/kmaooad/caja22-bots (master) has no authors specified, using all authors by default.
+Dec 24, 2022 8:38:14 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-bots (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/kmaooad/caja22-kmavun (master)...
+Dec 24, 2022 8:38:14 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/kmaooad/caja22-kmavun (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/kmaooad/caja22-kmavun (master) completed!
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator analyzeRepos
+INFO: [8/8] Analyzing https://github.com/kmaooad/caja22-opossum (master)...
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/kmaooad/caja22-opossum (master) does not contain a standalone config file.
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator updateAuthorList
+Dec 24, 2022 8:38:14 AM reposense.report.ReportGenerator updateAuthorList
 INFO: https://github.com/kmaooad/caja22-opossum (master) has no authors specified, using all authors by default.
-Dec 24, 2022 8:21:35 AM reposense.report.ReportGenerator analyzeRepos
-WARNING: No authors found with commits for https://github.com/kmaooad/caja22-manticore (master).
-Dec 24, 2022 8:21:35 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
+Dec 24, 2022 8:38:14 AM reposense.authorship.FileInfoExtractor extractTextFileInfos
 INFO: Extracting relevant file info from https://github.com/kmaooad/caja22-opossum (master)...
-Dec 24, 2022 8:21:37 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Dec 24, 2022 8:38:15 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+INFO: Extracting commits info for https://github.com/kmaooad/caja22-bots (master)...
+Dec 24, 2022 8:38:15 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+INFO: Analyzing commits info for https://github.com/kmaooad/caja22-bots (master)...
+Dec 24, 2022 8:38:15 AM reposense.report.ReportGenerator analyzeRepo
+INFO: Analysis of https://github.com/kmaooad/caja22-bots (master) completed!
+Dec 24, 2022 8:38:16 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/kmaooad/caja22-opossum (master)...
-Dec 24, 2022 8:21:37 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Dec 24, 2022 8:38:16 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/kmaooad/caja22-opossum (master)...
-Dec 24, 2022 8:21:37 AM reposense.report.ReportGenerator analyzeRepo
+Dec 24, 2022 8:38:16 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/kmaooad/caja22-opossum (master) completed!
-Dec 24, 2022 8:21:37 AM reposense.report.ReportGenerator generateReposReport
+Dec 24, 2022 8:38:16 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/runner/work/publish-RepoSense/publish-RepoSense/reposense-report
-Dec 24, 2022 8:21:37 AM reposense.RepoSense main
-INFO: Elapsed processing time: 5.45 second(s)
+Dec 24, 2022 8:38:16 AM reposense.RepoSense main
+INFO: Elapsed processing time: 5.56 second(s)
